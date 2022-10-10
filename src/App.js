@@ -5,6 +5,7 @@ function App() {
   return (
     <div>
       <h2>Expense Tracker</h2>
+      {/*declare of variable*/}
       <ExpenseItem
         title={expenses[0].title}
         amount={expenses[0].amount}
