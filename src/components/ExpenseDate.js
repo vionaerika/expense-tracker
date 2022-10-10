@@ -1,4 +1,5 @@
 //A new custom component to render the date into the calendar looking block
+import "./ExpenseDate.css";
 
 function ExpenseDate(props) {
   const month = props.date.toLocaleString("en-US", { month: "long" });
@@ -7,9 +8,9 @@ function ExpenseDate(props) {
 
   return (
     <div>
-      <div>{month}</div>
-      <div>{year}</div>
-      <div>{day}</div>
+      <div className="expense-date-month">{month}</div>
+      <div className="expense-date-year">{year}</div>
+      <div className="expense-date-day">{day}</div>
     </div>
   );
 }
